@@ -1,6 +1,6 @@
 # A collection of example grok patterns for parsing Salesforce Commerce Cloud Logs
 # Note: Most of these are untested with the nr-logs-for-sfcc image.
-
+#
 # error patterns
 <grok>
   pattern ^%{LOGLEVEL:level} %{WORD:servlet}\|%{NUMBER}\|%{DATA:sitename}\|%{DATA:action}\|%{WORD:pipeline}\|%{DATA:sessionid} %{DATA} %{DATA} %{DATA} %{DATA} %{DATA} %{DATA} %{DATA}\s+%{WTF}?%{GREEDYDATA:message}
